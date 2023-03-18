@@ -24,18 +24,37 @@
 //   };
 // }
 
+// type User = {
+//   name: string;
+//   email: string;
+//   isActive: boolean;
+// }
+
+// function createUser(user: User): User {
+//   return {
+//     name: "", email: "", isActive: true
+//   };
+// }
+
+// createUser({name: "", email: "", isActive: true});
+
 type User = {
+  readonly _id: string;
   name: string;
   email: string;
   isActive: boolean;
+  credcardDetails: number;
 }
 
-function createUser(user: User): User {
-  return {
-    name: "", email: "", isActive: true
-  };
+let myUser: User = {
+  _id: '12345',
+  name: 'h',
+  email: 'h@h.com',
+  isActive: false
 }
 
-createUser({name: "", email: "", isActive: true});
+myUser.email = 'h@gmail.com';
+
+myUser._id = 'asa';
 
 export {};
