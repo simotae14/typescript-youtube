@@ -2,6 +2,8 @@
 exports.__esModule = true;
 var simone = {
     dbId: 22,
+    role: 'admin',
+    githubToken: 'github',
     email: 's@s.com',
     userId: 2211,
     startTrail: function () {
