@@ -13,11 +13,15 @@ class User {
     constructor(email, name) {
         this.email = email;
         this.name = name;
+        this._courseCount = 1;
         this.city = "Bergamo";
     }
     // GETTER
     get getAppleEmail() {
         return `apple${this.email}`;
+    }
+    get courseCount() {
+        return this._courseCount;
     }
 }
 const simone = new User('simone', 's@s.it');

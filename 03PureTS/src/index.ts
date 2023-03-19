@@ -10,6 +10,8 @@
 // }
 
 class User {
+  private _courseCount = 1;
+
   readonly city: string = "Bergamo";
   constructor(
     public email: string, 
@@ -21,6 +23,10 @@ class User {
   // GETTER
   get getAppleEmail(): string {
     return `apple${this.email}`;
+  }
+
+  get courseCount(): number {
+    return this._courseCount;
   }
 }
 
