@@ -10,14 +10,19 @@
 // }
 
 class User {
-  private readonly city: string = "Bergamo";
+  readonly city: string = "Bergamo";
   constructor(
     public email: string, 
     public name: string,
     // private userId: string
   ) {
   }
+
+  // GETTER
+  get getAppleEmail(): string {
+    return `apple${this.email}`;
+  }
 }
 
 const simone = new User('simone', 's@s.it');
-simone.name
+// simone.name
