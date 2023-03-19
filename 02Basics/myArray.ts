@@ -24,3 +24,5 @@ allUsers.push({
   name: "",
   isActive: true
 });
+
+export {};
