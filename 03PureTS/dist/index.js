@@ -16,6 +16,9 @@ class User {
         this._courseCount = 1;
         this.city = "Bergamo";
     }
+    deleteToken() {
+        console.log('Token deleted');
+    }
     // GETTER
     get getAppleEmail() {
         return `apple${this.email}`;
@@ -32,4 +35,4 @@ class User {
     }
 }
 const simone = new User('simone', 's@s.it');
-// simone.name
+// simone.deleteToken() // gives error

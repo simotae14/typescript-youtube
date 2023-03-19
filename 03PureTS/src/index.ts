@@ -20,6 +20,10 @@ class User {
   ) {
   }
 
+  private deleteToken() {
+    console.log('Token deleted');
+  }
+
   // GETTER
   get getAppleEmail(): string {
     return `apple${this.email}`;
@@ -39,4 +43,4 @@ class User {
 }
 
 const simone = new User('simone', 's@s.it');
-// simone.name
+// simone.deleteToken() // gives error
