@@ -20,3 +20,14 @@ identityFour({
     brand: 'simone',
     type: 4
 });
+// GENERICS WITH ARRAYS
+function getSearchProducts(products) {
+    // do some DB operations
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getMoreSearchProducts = (products) => {
+    // do some DB operations
+    const myIndex = 4;
+    return products[myIndex];
+};
