@@ -23,6 +23,13 @@ class User {
     get courseCount() {
         return this._courseCount;
     }
+    // SETTER
+    set courseCount(courseNum) {
+        if (courseNum <= 1) {
+            throw new Error('Course count should be more than 1');
+        }
+        this._courseCount = courseNum;
+    }
 }
 const simone = new User('simone', 's@s.it');
 // simone.name
