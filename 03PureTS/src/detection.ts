@@ -69,11 +69,37 @@ function isFish(pet: Fish | Bird): pet is Fish {
 function getFood(pet: Fish | Bird) {
   if (isFish(pet)) {
 
-    
+
     pet
     return 'fish Food';
   } else {
     pet
     return 'bird Food';
   }
+}
+
+// Discriminated Unions
+interface Circle {
+  kind: 'circle',
+  radius: number
+}
+
+interface Square {
+  kind: 'square',
+  side: number
+}
+
+interface Rectangle {
+  kind: 'rectangle',
+  length: number,
+  width: number
+}
+
+type Shape = Circle | Square;
+
+function getTrueShape(shape: Shape) {
+  if (shape.kind === "circle") {
+    return Math.PI * shape.radius ** 2;
+  }
+  return shape.side * shape.side;
 }
