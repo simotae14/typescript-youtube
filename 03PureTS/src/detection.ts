@@ -52,3 +52,28 @@ function logValue(x: Date | string) {
     console.log(x.toUpperCase());
   }
 }
+
+// Using Type Predicated
+type Fish = {
+  swim: () => void
+}
+
+type Bird = {
+  fly: () => void
+}
+
+function isFish(pet: Fish | Bird): pet is Fish {
+  return (pet as Fish).swim !== undefined;
+}
+
+function getFood(pet: Fish | Bird) {
+  if (isFish(pet)) {
+
+    
+    pet
+    return 'fish Food';
+  } else {
+    pet
+    return 'bird Food';
+  }
+}
