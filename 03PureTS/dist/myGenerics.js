@@ -31,3 +31,23 @@ const getMoreSearchProducts = (products) => {
     const myIndex = 4;
     return products[myIndex];
 };
+;
+function anotherFunction(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo
+    };
+}
+anotherFunction(3, {
+    connection: "tcp",
+    username: "simo",
+    password: "pwd"
+});
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addtoCart(product) {
+        this.cart.push(product);
+    }
+}
